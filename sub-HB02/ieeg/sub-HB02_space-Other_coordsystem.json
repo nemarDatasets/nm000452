@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "n/a",
+  "iEEGCoordinateSystemDescription": "No contact coordinates and no column-to-contact mapping were released; electrodes.tsv lists the 225 data columns with n/a coordinates only to satisfy BIDS-iEEG."
+}

@@ -1,0 +1,28 @@
+{
+  "onset": {
+    "Description": "start_ind_re_valid_alldataset[source_index] / 125 Hz (seconds from the first frame of ecog_alldataset)",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "(end_ind_re_valid_alldataset - start_ind_re_valid_alldataset) / 125 Hz",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "always 'word': one spoken-word trial of the authors' release",
+    "Levels": {
+      "word": "word trial"
+    }
+  },
+  "word": {
+    "Description": "label_alldataset[source_index] (target word)"
+  },
+  "source_index": {
+    "Description": "0-based index of the trial in label_alldataset / start_ind_re_valid_alldataset / end_ind_re_valid_alldataset of HB02.h5. Rows here are sorted by onset; the deposit's own order is not chronological."
+  },
+  "start_frame": {
+    "Description": "start_ind_re_valid_alldataset value (0-based frame of ecog_alldataset; the authors' prepare_data notebook calls these the trial onset indices)"
+  },
+  "end_frame": {
+    "Description": "end_ind_re_valid_alldataset value (0-based frame; the notebook calls these the trial offset indices)"
+  }
+}

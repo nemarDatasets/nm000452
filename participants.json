@@ -1,0 +1,20 @@
+{
+  "sex": {
+    "Description": "authors' configs/AllSubjectInfo.json ('Gender': 'Female')",
+    "Levels": {
+      "F": "female"
+    }
+  },
+  "age": {
+    "Description": "not released"
+  },
+  "implant_hemisphere": {
+    "Description": "authors' configs/AllSubjectInfo.json ('Brain': 'left')"
+  },
+  "grid_density": {
+    "Description": "authors' code ('Density': 'HB'); Chen et al. 2024: hybrid-density clinical-research grid"
+  },
+  "source_code": {
+    "Description": "participant code used by the authors (HB02)"
+  }
+}

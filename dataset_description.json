@@ -1,0 +1,47 @@
+{
+  "Name": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Xupeng Chen"
+  ],
+  "Acknowledgements": "Data deposited on Mendeley Data by Xupeng Chen (New York University). Study team per the paper: Xupeng Chen, Ran Wang, Amirhossein Khalilian-Gourtani, Leyao Yu, Patricia Dugan, Daniel Friedman, Werner Doyle, Orrin Devinsky, Yao Wang, Adeen Flinker.",
+  "HowToAcknowledge": "Cite the data (Chen, Xupeng (2024), 'ECoG_HB_02', Mendeley Data, V2, doi:10.17632/fp4bv9gtwk.2) and the paper (Chen, X., Wang, R., Khalilian-Gourtani, A., Yu, L., Dugan, P., Friedman, D., Doyle, W., Devinsky, O., Wang, Y. & Flinker, A. A neural speech decoding framework leveraging deep learning and speech synthesis. Nature Machine Intelligence 6, 467-480 (2024). doi:10.1038/s42256-024-00824-8).",
+  "Funding": [
+    "U.S. National Science Foundation IIS-1912286",
+    "U.S. National Science Foundation 2309057 (paper acknowledgements)",
+    "National Institutes of Health R01NS115929",
+    "National Institutes of Health R01NS109367",
+    "National Institutes of Health R01DC018805"
+  ],
+  "EthicsApprovals": [
+    "Institutional Review Board of NYU Grossman School of Medicine (Chen et al. 2024)"
+  ],
+  "ReferencesAndLinks": [
+    "Chen, X., Wang, R., Khalilian-Gourtani, A., Yu, L., Dugan, P., Friedman, D., Doyle, W., Devinsky, O., Wang, Y. & Flinker, A. A neural speech decoding framework leveraging deep learning and speech synthesis. Nature Machine Intelligence 6, 467-480 (2024). doi:10.1038/s42256-024-00824-8",
+    "https://doi.org/10.17632/fp4bv9gtwk.2",
+    "https://github.com/flinkerlab/neural_speech_decoding",
+    "Chen, X. & Wang, R. Neural speech decoding 1.0 (Zenodo, 2024). doi:10.5281/zenodo.10719428"
+  ],
+  "DatasetDOI": "n/a",
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.17632/fp4bv9gtwk.2",
+      "URL": "https://data.mendeley.com/datasets/fp4bv9gtwk/2",
+      "Version": "2 (published 2024-03)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "Chen et al. 2024 preprocessing (data authors)",
+      "Description": "Per the paper Methods: ECoG sampled at 2,048 Hz, downsampled to 512 Hz; artefactual and epileptiform electrodes rejected; common average reference; Hilbert envelope of high gamma (70-150 Hz); downsampled to 125 Hz; z-scored per electrode to pre-stimulus silent baselines. Output released as HB02.h5 together with 16 kHz speech audio and speech features.",
+      "CodeURL": "https://github.com/flinkerlab/neural_speech_decoding"
+    },
+    {
+      "Name": "NEMAR iEEG repackaging (f2_convert_hb.py)",
+      "Version": "1.0.0",
+      "Description": "ecog_alldataset written frame for frame as BrainVision float32 at 125 Hz (cast from float64, deviation measured), all-zero columns marked bad, word trials as events; HB02.h5 kept unchanged in sourcedata/. No signal processing added."
+    }
+  ]
+}

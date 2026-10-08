@@ -1,0 +1,29 @@
+{
+  "TaskName": "speech",
+  "TaskDescription": "Speech production. Per Chen et al. 2024 each participant performed five word-production tasks (auditory repetition, auditory naming, sentence completion, word reading, picture naming) with 50 unique target words. The release does not say which task each of the 372 trials in HB02.h5 belongs to.",
+  "SamplingFrequency": 125.0,
+  "PowerLineFrequency": "n/a",
+  "SoftwareFilters": {
+    "AuthorsPreprocessing": {
+      "Description": "Chen et al. 2024 Methods: signals sampled at 2,048 Hz and downsampled to 512 Hz; electrodes with artefacts or interictal/epileptiform activity rejected; common average reference subtracted; Hilbert envelope of the high gamma (70-150 Hz) component; downsampled to 125 Hz; each electrode z-scored to the mean and variance of 250-ms pre-stimulus silent periods of the training set."
+    }
+  },
+  "HardwareFilters": "n/a",
+  "Manufacturer": "Natus Biomedical",
+  "ManufacturersModelName": "Neuroworks Quantum Amplifier",
+  "iEEGReference": "common average reference (mean across valid electrodes and time subtracted, Chen et al. 2024 Methods), before the high-gamma envelope and z-scoring",
+  "ECOGChannelCount": 225,
+  "SEEGChannelCount": 0,
+  "EEGChannelCount": 0,
+  "EOGChannelCount": 0,
+  "ECGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0,
+  "RecordingDuration": 1352.6,
+  "RecordingType": "discontinuous",
+  "iEEGPlacementScheme": "Hybrid-density subdural grid (Chen et al. 2024: 64 standard 8 x 8 macro contacts at 10-mm spacing plus 64 interspersed 1-mm contacts; PMT Corporation); left hemisphere per the authors' configs/AllSubjectInfo.json. Column-to-contact mapping not released.",
+  "ElectrodeManufacturer": "PMT Corporation",
+  "iEEGElectrodeGroups": "one hybrid-density ECoG grid",
+  "ElectricalStimulation": false
+}

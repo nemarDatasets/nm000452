@@ -1,0 +1,12 @@
+{
+  "SpatialReference": "none: no electrode coordinates are included in the source release (x, y, z = n/a)",
+  "name": {
+    "Description": "column of ecog_alldataset (1-based); the column-to-contact mapping was not released"
+  },
+  "group": {
+    "Description": "single hybrid-density grid"
+  },
+  "signal_in_deposit": {
+    "Description": "'no' when every value of the column is exactly 0 in the deposit"
+  }
+}
