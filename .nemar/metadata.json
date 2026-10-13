@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
-  "description": "A derivative repackaging of the single-participant ECoG_HB_02 Mendeley Data deposit, comprising processed high-gamma (70-150 Hz) envelope features at 125 Hz from a hybrid-density ECoG grid, with synchronised speech audio and trial-level word events. The participant is the one individual from Chen et al. (2024) who consented to public release of neural and audio data. Raw ECoG voltages were not released, and the time axis is not a continuous recording. The features are stored in BrainVision format with the original HB02.h5 file kept in sourcedata.",
-  "methods_description": "Per the original paper, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference was applied. The Hilbert envelope of the high-gamma band (70-150 Hz) was computed, downsampled to 125 Hz, and z-scored per electrode to pre-stimulus silent baselines. Here the float64 feature matrix was converted to float32 BrainVision format, with word trials written as events.",
+  "description": "A derivative repackaging of the single-participant ECoG_HB_02 Mendeley Data deposit, comprising a processed 125 Hz high-gamma (70-150 Hz) envelope feature matrix from a hybrid-density ECoG grid with synchronised speech audio. The participant is the one individual from Chen et al. 2024 who consented to public release of neural and audio data. The data were converted to BrainVision format with channel and event sidecars for 372 word trials (51 distinct words); the raw ECoG voltage recordings were not released.",
+  "methods_description": "Per the original paper, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference applied. The Hilbert envelope of the high-gamma band (70-150 Hz) was computed, downsampled to 125 Hz, and z-scored per electrode to 250-ms pre-stimulus silent baselines. Speech audio was recorded at 16 kHz in synchrony. The repackaging cast the values to float32 BrainVision and marked all-zero columns as bad.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,15 +22,13 @@
       "term": "speech decoding"
     },
     {
-      "term": "high gamma"
+      "term": "high-gamma"
     },
     {
       "term": "hybrid-density grid"
     },
     {
-      "term": "Speech",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013060"
+      "term": "speech synthesis"
     }
   ],
   "related_identifiers": [
