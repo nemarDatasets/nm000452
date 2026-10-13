@@ -1,9 +1,38 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
+  "description": "A derivative repackaging of the single-participant ECoG_HB_02 Mendeley Data deposit, comprising processed high-gamma (70-150 Hz) envelope features at 125 Hz from a hybrid-density ECoG grid, with synchronised speech audio and trial-level word events. The participant is the one individual from Chen et al. (2024) who consented to public release of neural and audio data. Raw ECoG voltages were not released, and the time axis is not a continuous recording. The features are stored in BrainVision format with the original HB02.h5 file kept in sourcedata.",
+  "methods_description": "Per the original paper, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference was applied. The Hilbert envelope of the high-gamma band (70-150 Hz) was computed, downsampled to 125 Hz, and z-scored per electrode to pre-stimulus silent baselines. Here the float64 feature matrix was converted to float32 BrainVision format, with word trials written as events.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Xupeng Chen": {}
   },
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "speech decoding"
+    },
+    {
+      "term": "high gamma"
+    },
+    {
+      "term": "hybrid-density grid"
+    },
+    {
+      "term": "Speech",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013060"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.17632/fp4bv9gtwk.2",
@@ -53,14 +82,11 @@
       "award_number": "R01DC018805"
     }
   ],
-  "title": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "1.24 GB (4 files)"
   ],
@@ -68,33 +94,11 @@
     ".eeg",
     ".h5",
     ".json",
+    ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "A derivative BIDS repackaging of the single-participant Mendeley Data release ECoG_HB_02, containing hybrid-density ECoG high-gamma (70-150 Hz) envelope features at 125 Hz with synchronised speech audio. The participant is the only one from Chen et al. 2024 who consented to public release of neural and audio data. Raw voltage recordings were not released. The data comprise 372 word-production trials covering 51 distinct words, supporting neural speech decoding research.",
-  "methods_description": "Per the original paper, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference was applied. The Hilbert envelope of the high-gamma band (70-150 Hz) was computed, downsampled to 125 Hz, and z-scored per electrode to pre-stimulus silent baselines. In this derivative, the float64 feature matrix was converted to BrainVision float32 and all-zero columns were marked bad. Word trials were written as events, and the original HB02.h5 file was kept unchanged in sourcedata.",
-  "keywords": [
-    {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "ECoG"
-    },
-    {
-      "term": "high gamma"
-    },
-    {
-      "term": "speech decoding"
-    },
-    {
-      "term": "hybrid-density grid"
-    },
-    {
-      "term": "speech production"
-    }
-  ],
-  "source_hash": "994657cb0ebdae209b223208085e877295629465087d586cb498c46339bdd824"
+  "source_hash": "da90cb202fed293974b38d53b3c825b165933f5e62181e4ef4e181b507ddbd91"
 }
