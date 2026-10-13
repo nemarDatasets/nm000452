@@ -24,12 +24,15 @@
     "https://github.com/flinkerlab/neural_speech_decoding",
     "Chen, X. & Wang, R. Neural speech decoding 1.0 (Zenodo, 2024). doi:10.5281/zenodo.10719428"
   ],
-  "DatasetDOI": "n/a",
+  "DatasetDOI": "10.82901/nemar.nm000452",
   "SourceDatasets": [
     {
       "DOI": "doi:10.17632/fp4bv9gtwk.2",
       "URL": "https://data.mendeley.com/datasets/fp4bv9gtwk/2",
       "Version": "2 (published 2024-03)"
+    },
+    {
+      "DOI": "n/a"
     }
   ],
   "GeneratedBy": [
@@ -43,5 +46,6 @@
       "Version": "1.0.0",
       "Description": "ecog_alldataset written frame for frame as BrainVision float32 at 125 Hz (cast from float64, deviation measured), all-zero columns marked bad, word trials as events; HB02.h5 kept unchanged in sourcedata/. No signal processing added."
     }
-  ]
+  ],
+  "Version": "1.0.0"
 }
