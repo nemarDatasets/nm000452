@@ -1,5 +1,5 @@
 {
-  "Name": "Chen-2024-neural-10.1038/s42256-024-00824-8",
+  "Name": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC-BY-4.0",
@@ -47,5 +47,5 @@
       "Description": "ecog_alldataset written frame for frame as BrainVision float32 at 125 Hz (cast from float64, deviation measured), all-zero columns marked bad, word trials as events; HB02.h5 kept unchanged in sourcedata/. No signal processing added."
     }
   ],
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
