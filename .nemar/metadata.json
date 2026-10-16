@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "ECoG_HB_02: hybrid-density ECoG high-gamma features with synchronised speech, one participant (derivative)",
-  "description": "A derivative repackaging of the Mendeley Data record ECoG_HB_02, a single participant's hybrid-density electrocorticography (ECoG) high-gamma feature matrix sampled at 125 Hz with synchronised speech audio. The participant is the only one from Chen et al. 2024 who consented to public release of neural and audio data. The raw voltage recordings were not released. The data comprise 372 word trials covering 51 distinct words and are converted to BrainVision format with BIDS sidecars and event annotations. The time axis is discontinuous.",
-  "methods_description": "As stated in the source paper, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference was applied. The Hilbert envelope of the high-gamma band (70-150 Hz) was computed, downsampled to 125 Hz, and z-scored per electrode against pre-stimulus silent baselines. In this derivative the float64 features were cast to float32 BrainVision format, all-zero columns were marked as bad channels, and word trials were encoded as events. The original HB02.h5 file is retained in sourcedata.",
+  "description": "This derivative dataset repackages the publicly released single-participant ECoG_HB_02 recording from Chen et al. (2024). It contains hybrid-density ECoG high-gamma (70-150 Hz) envelope features at 125 Hz, z-scored per electrode, with synchronised speech audio and word-trial events. The raw voltage recordings were not released, and the data support research on neural speech decoding.",
+  "methods_description": "In the source study, ECoG was sampled at 2,048 Hz and downsampled to 512 Hz. Artefactual and epileptiform electrodes were rejected and a common average reference was applied. The Hilbert envelope of the 70-150 Hz high-gamma band was downsampled to 125 Hz and z-scored to pre-stimulus silent baselines. This derivative stores the feature matrix as BrainVision float32, marks all-zero columns as bad, and adds word-trial events. The original HB02.h5 file is kept unchanged in sourcedata.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,10 +19,10 @@
       "term": "ECoG"
     },
     {
-      "term": "speech decoding"
+      "term": "high gamma"
     },
     {
-      "term": "high gamma"
+      "term": "speech decoding"
     },
     {
       "term": "hybrid-density grid"
